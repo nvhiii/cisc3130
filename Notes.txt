@@ -11,7 +11,7 @@ Spring 2022
 
 2.9.22 - Queues and Stacks
 1. Queues
-- search from front and back (FIFO)
+- search from front and back (FIFO - first in, first out)
 
 Definition: Is an ordered set of items from which items may be removed from the front and added to the end (input queue)
     Examples: email, the punch-card programming clock contraption, printer, teleprocessing (messages)
@@ -61,7 +61,23 @@ Descending Priority Queues
 2. Stacks
 - only from the back
 - LIFO (Last in, first out)
+    Definition: an ordered set of items from which items may be removed (or deleted) and into which new items may be inserted at one end called the top of the stack
 
-    Definition: 
+There are 3 routines associated with stacks:
 
-- there are 3 routines associated with stacks
+    1. Pop
+        - An item is removed from the top of the stack
+
+    2. Push
+        - An item is added to the top of the stack
+
+    3. Empty
+        - it returns a value of true or false to let us know if there are any items on the stack
+
+    4. Top Stack
+        - Gives you the values that are in the top element of the stack without removing it
+
+
+    -- START OF THE X3 WORKSHEET OF PREFIX, INFIX, and POSTFIX EXPRESSIONS --
+
+    A correct math problem has 1 more operand than operator
