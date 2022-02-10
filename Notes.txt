@@ -1,0 +1,67 @@
+Nahi Khan
+CISC 3130 - Data Structures
+Professor Lowenthal
+Spring 2022
+
+2.2.22 Notes
+- Check blackboard
+- Lists, Binary Search, Review
+- Downsides of lists, you can only start from the start
+- Binary search can start from both sides
+
+2.9.22 - Queues and Stacks
+1. Queues
+- search from front and back (FIFO)
+
+Definition: Is an ordered set of items from which items may be removed from the front and added to the end (input queue)
+    Examples: email, the punch-card programming clock contraption, printer, teleprocessing (messages)
+
+There are 3 routines associated with queues:
+    1. Remove
+        adds 1 to rear then sticks in the information and in the beginning it checks if adding 1 it equals to rear
+        if (front == rear) cannot
+        - move up 1 then remove the data (if front and rear equal, the queue is empty)
+        - Checks if front equal rear
+        - then give message
+        - cannot remove if empty
+        - if not a problem, add 1 to front and take out info
+        - if not true, then do rear++
+            - remove first
+            - check if ++ makes it higher than the array size
+            - if so, then circle around to index 0
+    2. Insert
+    - check if front == rear
+    - front up 1
+    -
+    ^ Remove and Insert are used together (Array usage, bank line example of size 5 array from class)
+        ** in this example, new person is inserted at the end of the line at first, which is position 0, then people are inserted at the end of the line until the array size is reached,
+            then the rear becomes the end of the line, so the new person is inserted at the queue at position 0 after the algorithm removes the old position 0
+
+            The array has to be full in order for the remove to work
+            Remove only works when insert makes the array size equal to greater than the array size
+            This is turn changes the rear and front positioning as the front moves back one index as the rear moves back as well
+
+            First add 1 to rear then stick the rear value in and move front up an index if the index size isnt greater than the length of the array
+
+    3. Empty v. Full
+
+    ** The computer cannot differentiate between empty and rear
+
+Ascending Priority Queues
+    - only the smallest item can be removed.
+    - same adding method as descending queue (add to rear)
+
+Descending Priority Queues
+    - only the largest item can be removed
+    - sae adding method as ascending (add to rear)
+
+
+(use data structure list as a queue or a stack)
+
+2. Stacks
+- only from the back
+- LIFO (Last in, first out)
+
+    Definition: 
+
+- there are 3 routines associated with stacks
