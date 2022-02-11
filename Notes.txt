@@ -81,3 +81,35 @@ There are 3 routines associated with stacks:
     -- START OF THE X3 WORKSHEET OF PREFIX, INFIX, and POSTFIX EXPRESSIONS --
 
     A correct math problem has 1 more operand than operator
+
+Chapter 20: Stacks and Queues
+
+20.1 - Stacks and Their Applications
+
+Definition: A stack is a collection of items that allows addition and removal of items in a last-in-first-out manner (LIFO)
+    ** Can be implemented through lists, arrays, and arraylists
+
+       e.g.:
+       Single-car garages
+
+Stack Operations
+    1. Push - takes a single item and adds it to the top of the stack
+    2. Peek - returns the item currently at the top of the stack, but does not remove it
+    3. Pop - removes and returns the item currently stored at the top of the stack
+
+Stack Class Methods
+
+    Stack<E>() // Constructor
+
+    E push(E item) // Adds item to top of stack and returns said item
+
+    E pop() // Removes and returns the item at the top of the stack. (If empty, EmptyStackException thrown)
+
+    E peek() // Returns the item at top of stack exclusively (If empty stack, throws EmptyStackException)
+
+    boolean empty() // Returns boolean value true if stack is empty and false otherwise
+
+Relevant Code:
+StackDemo1.java
+
+
