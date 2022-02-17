@@ -113,3 +113,31 @@ Relevant Code:
 StackDemo1.java
 StackDemo2.java
 
+2.16.2022 Notes
+Prefix, Infix, and Postfix Notation
+
+Infix - is what us humans are used to
+
+Prefix - operators in front of the operands
+    ** do some practice here
+
+Postfix - operators after the operands
+    ** do some practice here
+
+How stacks work with recursion and in postfix/prefix notation
+    - COMPUTER ONLY READS POSTFIX, THUS EVERY PROBLEM IS FIRST CONVERTED INTO POSTFIX
+    - computer reads from left to right
+    - now computer checks if the first thing is an operand or operator
+    - if operand, it goes onto the string
+    - if operator, the operator is compared to what is on top of the stack
+        - if stack empty, the operator goes onto top of stack
+        - also if the operator is higher in precedence than that on top of the stack, add it to the top of the stack
+        - if operator is equal in precedence to the top of stack, remove the top of stack and add it to the string and add the new operator to the top of the stack
+        - if the operator is a parentheses, it goes on top of the stack and corresponding operators go on top until the closing parentheses is reached
+        - if the operator reached in the closing parentheses, pop everything up to the opening parentheses onto the string
+
+
+Truth-teller paradox
+Answer: Ask the truth-teller or the liar-teller what the other guy is saying
+
+
