@@ -140,4 +140,6 @@ How stacks work with recursion and in postfix/prefix notation
 Truth-teller paradox
 Answer: Ask the truth-teller or the liar-teller what the other guy is saying
 
+3.22.2022 Notes
 
+- 
